@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.1s;
+}
+body {
+  background-color: #f5f8ff;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 120vh; */
+}
+#tabs-header {
+  margin-top: 2rem;
+}
+#tabs-header h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  color: #102a42;
+}
+#tabs-header p {
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #617d98;
+  margin-top: 1rem;
+}
+#tabs-footer {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  margin-top: 5rem;
+}
+#img-container img {
+  width: 569px;
+  height: 20rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.tabs-container {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tabs h3 {
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e4e9fd;
+}
+.tabs h3:hover {
+  background-color: #ebe7e7;
+}
+.tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+.tab-content h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+.tab-content div {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}
+.tabs .active {
+  background-color: #ffffff;
+  color: #4d5bf9;
+}
